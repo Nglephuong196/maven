@@ -1,0 +1,281 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+  overflow: hidden;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 14px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.MuiSvgIcon-root {
+  color: #4D2CEC;
+}
+
+.MuiInputLabel-root {
+  color: #8F9BB3 !important;
+}
+
+.MuiInputBase-input.MuiInput-input {
+  color: white;
+}
+
+div.rdw-editor-toolbar {
+  color: black;
+  font-size: 14px;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-formControl {
+  border-radius: 10px;
+  background-color: #272E49;
+  color: #FFFFFF;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 14px;
+}
+
+.MuiGrid-root.MuiGrid-item textarea{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #272E49;
+  color: #FFFFFF;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 14px;
+}
+
+.MuiButton-root {
+  color: #FFFFFF;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 14px;
+}
+
+.MuiCardHeader-content {
+  width: 100px;
+  overflow: hidden;
+}
+
+.MuiButton-label {
+  font-family: Nunito Sans, sans-serif;
+}
+
+.MuiTableCell-root.MuiTableCell-body {
+  font-family: Nunito Sans, sans-serif;
+  font-size: 14px;
+}
+
+.MuiTableCell-root.MuiTableCell-head {
+  font-family: Nunito Sans, sans-serif;
+  font-size: 14px;
+  color: #8F9BB3;
+}
+
+.MuiInputBase-root.MuiOutlinedInput-root {
+  color: #FFFFFF;
+  font-family: Nunito Sans, sans-serif;
+  font-size: 14px;
+}
+
+.MuiSelect-select:not([multiple]) option, .MuiSelect-select:not([multiple]) optgroup {
+  background-color: #272E49 !important;
+}
+
+.MuiList-root.MuiMenu-list.MuiList-padding {
+  background-color: #1D253E;
+  color: #FFF;
+}
+
+/* Make clicks pass-through */
+#nprogress {
+  pointer-events: none;
+}
+
+#nprogress .bar {
+  background: #29d;
+
+  position: fixed;
+  z-index: 1031;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 2px;
+}
+
+/* Fancy blur effect */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1;
+
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  right: 15px;
+}
+
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: #29d;
+  border-left-color: #29d;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+.nprogress-custom-parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+  position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes nprogress-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.RichEditor-root {
+  border: 1px solid #ddd;
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  padding: 15px;
+}
+
+.RichEditor-editor {
+  border-top: 1px solid #ddd;
+  cursor: text;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.RichEditor-editor .public-DraftEditorPlaceholder-root,
+.RichEditor-editor .public-DraftEditor-content {
+  margin: 0 -15px -15px;
+  padding: 15px;
+}
+
+.RichEditor-editor .public-DraftEditor-content {
+  min-height: 100px;
+}
+
+.RichEditor-hidePlaceholder .public-DraftEditorPlaceholder-root {
+  display: none;
+}
+
+.RichEditor-editor .RichEditor-blockquote {
+  border-left: 5px solid #eee;
+  color: #666;
+  font-family: 'Hoefler Text', 'Georgia', serif;
+  font-style: italic;
+  margin: 16px 0;
+  padding: 10px 20px;
+}
+
+.RichEditor-editor .public-DraftStyleDefault-pre {
+  background-color: rgba(0, 0, 0, 0.05);
+  font-family: 'Inconsolata', 'Menlo', 'Consolas', monospace;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.RichEditor-controls {
+  font-family: 'Helvetica', sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+  user-select: none;
+}
+
+.RichEditor-styleButton {
+  color: #999;
+  cursor: pointer;
+  margin-right: 16px;
+  padding: 2px 0;
+  display: inline-block;
+}
+
+.RichEditor-activeButton {
+  color: #5890ff;
+}
+
+.transcriptions-list {
+  background-color: #13162C !important;
+  /* color: #FFFFFF !important; */
+  font-family: Nunito Sans, sans-serif;
+}
+
+.public-DraftStyleDefault-block.public-DraftStyleDefault-ltr {
+  /* color: #FFFFFF !important; */
+}
+
+.project-transcription.transcriptions-list-container.transcriptions-list {
+  border: none !important;
+}
+
+.resume-transcript-auto-scroll.is-at-the-bottom {
+  bottom: 0px !important;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.MuiTypography-root.MuiTypography-body1.MuiTypography-colorTextSecondary {
+  color: #FFF;
+}
+
+#__next {
+  width: 100%;
+  height: 100%;
+}
